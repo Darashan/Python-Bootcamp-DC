@@ -1,0 +1,3 @@
+d = open('test.txt', 'w')
+d.write('Hello World')
+d.close()
