@@ -1,12 +1,8 @@
-#very tough
-def myfunc(word):
-    
-    skyline = []
-    
-    for i in range(len(word)):
-        
-        if i%2 == 0:
-            skyline.append(word[i].upper())
+def myfunc(string):
+    new_string = ''
+    for x in range(len(string)):
+        if (x+1)%2==0:
+            new_string += string[x].upper()
         else:
-            skyline.append(word[i].lower())
-    return ''.join(skyline)   
+            new_string += string[x].lower()
+    return new_string
