@@ -1,0 +1,12 @@
+#very tough
+def myfunc(word):
+    
+    skyline = []
+    
+    for i in range(len(word)):
+        
+        if i%2 == 0:
+            skyline.append(word[i].upper())
+        else:
+            skyline.append(word[i].lower())
+    return ''.join(skyline)   
